@@ -1,0 +1,123 @@
+/* Reset Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ul, ol {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  body {
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    background-color: var(--color-gray-900);
+    color: var(--color-white);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    line-height: 100%;
+    font-weight: 400;
+  }
+  
+  button, input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+  }
+  
+  button, input {
+    border: none;
+    background: none;
+    outline: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  :root {
+      --color-green-500: #c5f82a;
+      --color-gray-700:#333333;
+      --color-gray-800:#1f1f1f;
+      --color-gray-900:#141414;
+      --color-white: #ffffff;
+  
+      --spacing-500: 40px;
+      --spacing-300: 24px;
+      --spacing-200: 16px;
+  
+      
+  }
+
+  main.card-wrapper {
+    background-color: var(--color-gray-800);
+    width: 90%;
+    max-width: 388px;
+    height: auto;
+    border-radius: 16px;
+    padding: 40px;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .contact-avatar {
+    border-radius: 100%;
+    overflow: hidden;
+    width: 90px;
+    margin-bottom: 32px;
+  }
+
+  .contact-name {
+    font-weight: 600;
+    margin-bottom: 16px;
+    line-height: 100%;
+  }
+
+  .contact-resume {
+    font-size: 13px;
+  }
+
+  .contact-locale {
+    font-weight: 700;
+    color: #c5f82a;
+    margin-bottom: 32px;
+  }
+
+  .contact-resume {
+    margin-bottom: 32px;
+  }
+
+  .social-link {
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #333333;
+    align-content: center;
+    margin-bottom: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+  }
+
+  .social-link:hover {
+    background-color: #c5f82a;
+    color: #1f1f1f;
+  }
+
+  @media (max-width: 375px) {
+    main.card-wrapper {
+    max-width: 324px;
+  }
+
+}
